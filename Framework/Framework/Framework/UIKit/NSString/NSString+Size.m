@@ -10,4 +10,9 @@
 
 @implementation NSString (Size)
 
+- (CGSize) sizeWithMaxSize: (CGSize)maxSize fontSize: (CGFloat)fontSize{
+    
+    return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:fontSize]} context:nil].size;
+}
+
 @end

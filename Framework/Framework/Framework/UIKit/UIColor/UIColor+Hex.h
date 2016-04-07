@@ -9,6 +9,8 @@
 #pragma mark --------------------------
 #pragma mark 十六进制-获取颜色
 
+#define HexColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Hex)

@@ -16,7 +16,7 @@
  *  @param maxSize  设置最大宽度和高度
  *  @param fontSize 字体大小
  *
- *  @return <#return value description#>
+ *  @return CGSize
  */
 - (CGSize) sizeWithMaxSize: (CGSize)maxSize fontSize: (CGFloat)fontSize;
 

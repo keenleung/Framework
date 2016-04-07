@@ -145,6 +145,12 @@ typedef NS_ENUM(NSUInteger, UIImageMaskOption) {
  *  @return  UIImage对象
  */
 + (UIImage *) imageInOriginalModeWithName: (NSString *)imageName;
+
+/**
+ *  返回一个没有经过渲染的图片
+ *
+ *  @return UIImage对象
+ */
 - (UIImage *) imageInOriginalMode;
 
 
@@ -156,7 +162,20 @@ typedef NS_ENUM(NSUInteger, UIImageMaskOption) {
  *  @return 已经拉伸好的图片
  */
 + (UIImage *)imageByStretchInCenterPoint: (UIImage *)image;
+
+/**
+ *  对图片的中心点位置进行拉伸,防止图片变形
+ *
+ *  @return 已经拉伸好的图片
+ */
 - (UIImage *)imageByStretchInCenterPoint;
+
+/**
+ *  返回一张 圆角 图片
+ *
+ *  @return UIImage
+ */
+- (UIImage *)circleImage;
 
 
 @end

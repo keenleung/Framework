@@ -36,6 +36,16 @@
 		18335F4D1CACFBDE00B465A7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18335F471CACFBDE00B465A7 /* AFURLSessionManager.m */; };
 		18335F501CACFBE900B465A7 /* YYHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18335F4F1CACFBE900B465A7 /* YYHttpTool.m */; };
 		18335F541CAD1AE100B465A7 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 18335F531CAD1AE100B465A7 /* NSString+Size.m */; };
+		184FEA671CB334DD0053F2AF /* GlobalSlidingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FEA661CB334DD0053F2AF /* GlobalSlidingNavigationController.m */; };
+		184FEA6F1CB336210053F2AF /* navigationButtonReturn.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FEA691CB336210053F2AF /* navigationButtonReturn.png */; };
+		184FEA701CB336210053F2AF /* navigationButtonReturn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FEA6A1CB336210053F2AF /* navigationButtonReturn@2x.png */; };
+		184FEA711CB336210053F2AF /* navigationButtonReturn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FEA6B1CB336210053F2AF /* navigationButtonReturn@3x.png */; };
+		184FEA721CB336210053F2AF /* navigationButtonReturnClick.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FEA6C1CB336210053F2AF /* navigationButtonReturnClick.png */; };
+		184FEA731CB336210053F2AF /* navigationButtonReturnClick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FEA6D1CB336210053F2AF /* navigationButtonReturnClick@2x.png */; };
+		184FEA741CB336210053F2AF /* navigationButtonReturnClick@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FEA6E1CB336210053F2AF /* navigationButtonReturnClick@3x.png */; };
+		184FEA7A1CB3383C0053F2AF /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FEA791CB3383C0053F2AF /* GlobalConst.m */; };
+		1899A0441CB65A4E00636DAD /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A0431CB65A4E00636DAD /* FileManager.m */; };
+		1899A0481CB6624B00636DAD /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A0471CB6624B00636DAD /* UITextField+Placeholder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +106,21 @@
 		18335F4F1CACFBE900B465A7 /* YYHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHttpTool.m; sourceTree = "<group>"; };
 		18335F521CAD1AE100B465A7 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		18335F531CAD1AE100B465A7 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		184FEA651CB334DD0053F2AF /* GlobalSlidingNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSlidingNavigationController.h; sourceTree = "<group>"; };
+		184FEA661CB334DD0053F2AF /* GlobalSlidingNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSlidingNavigationController.m; sourceTree = "<group>"; };
+		184FEA691CB336210053F2AF /* navigationButtonReturn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationButtonReturn.png; sourceTree = "<group>"; };
+		184FEA6A1CB336210053F2AF /* navigationButtonReturn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonReturn@2x.png"; sourceTree = "<group>"; };
+		184FEA6B1CB336210053F2AF /* navigationButtonReturn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonReturn@3x.png"; sourceTree = "<group>"; };
+		184FEA6C1CB336210053F2AF /* navigationButtonReturnClick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationButtonReturnClick.png; sourceTree = "<group>"; };
+		184FEA6D1CB336210053F2AF /* navigationButtonReturnClick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonReturnClick@2x.png"; sourceTree = "<group>"; };
+		184FEA6E1CB336210053F2AF /* navigationButtonReturnClick@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationButtonReturnClick@3x.png"; sourceTree = "<group>"; };
+		184FEA751CB3377D0053F2AF /* GlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMacro.h; sourceTree = "<group>"; };
+		184FEA781CB3383C0053F2AF /* GlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
+		184FEA791CB3383C0053F2AF /* GlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
+		1899A0421CB65A4E00636DAD /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		1899A0431CB65A4E00636DAD /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		1899A0461CB6624B00636DAD /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		1899A0471CB6624B00636DAD /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +202,7 @@
 		18335EFE1CACE6B300B465A7 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				184FEA641CB3346F0053F2AF /* Tools */,
 				18335F391CACF7B200B465A7 /* Network */,
 				18335F4E1CACFBE900B465A7 /* YYHttpTool.h */,
 				18335F4F1CACFBE900B465A7 /* YYHttpTool.m */,
@@ -189,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				18335F0E1CACE70300B465A7 /* UIKit+Extension.h */,
+				1899A0451CB6623000636DAD /* UITextField */,
 				18335F511CAD1ACA00B465A7 /* NSString */,
 				18335F351CACE89300B465A7 /* Dictionary */,
 				18335F001CACE70300B465A7 /* UIBarButtonItem */,
@@ -332,6 +359,43 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		184FEA641CB3346F0053F2AF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				184FEA681CB336210053F2AF /* images */,
+				184FEA651CB334DD0053F2AF /* GlobalSlidingNavigationController.h */,
+				184FEA661CB334DD0053F2AF /* GlobalSlidingNavigationController.m */,
+				184FEA751CB3377D0053F2AF /* GlobalMacro.h */,
+				184FEA781CB3383C0053F2AF /* GlobalConst.h */,
+				184FEA791CB3383C0053F2AF /* GlobalConst.m */,
+				1899A0421CB65A4E00636DAD /* FileManager.h */,
+				1899A0431CB65A4E00636DAD /* FileManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		184FEA681CB336210053F2AF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				184FEA691CB336210053F2AF /* navigationButtonReturn.png */,
+				184FEA6A1CB336210053F2AF /* navigationButtonReturn@2x.png */,
+				184FEA6B1CB336210053F2AF /* navigationButtonReturn@3x.png */,
+				184FEA6C1CB336210053F2AF /* navigationButtonReturnClick.png */,
+				184FEA6D1CB336210053F2AF /* navigationButtonReturnClick@2x.png */,
+				184FEA6E1CB336210053F2AF /* navigationButtonReturnClick@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1899A0451CB6623000636DAD /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				1899A0461CB6624B00636DAD /* UITextField+Placeholder.h */,
+				1899A0471CB6624B00636DAD /* UITextField+Placeholder.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,7 +457,13 @@
 				18335EEC1CACE60600B465A7 /* LaunchScreen.storyboard in Resources */,
 				18335F291CACE70300B465A7 /* UINavigationBar.bundle in Resources */,
 				18335EE91CACE60600B465A7 /* Assets.xcassets in Resources */,
+				184FEA711CB336210053F2AF /* navigationButtonReturn@3x.png in Resources */,
+				184FEA731CB336210053F2AF /* navigationButtonReturnClick@2x.png in Resources */,
+				184FEA721CB336210053F2AF /* navigationButtonReturnClick.png in Resources */,
 				18335EE71CACE60600B465A7 /* Main.storyboard in Resources */,
+				184FEA701CB336210053F2AF /* navigationButtonReturn@2x.png in Resources */,
+				184FEA741CB336210053F2AF /* navigationButtonReturnClick@3x.png in Resources */,
+				184FEA6F1CB336210053F2AF /* navigationButtonReturn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,11 +479,13 @@
 				18335F2B1CACE70300B465A7 /* UIView+KBView.m in Sources */,
 				18335F481CACFBDE00B465A7 /* AFHTTPSessionManager.m in Sources */,
 				18335F4C1CACFBDE00B465A7 /* AFURLResponseSerialization.m in Sources */,
+				184FEA671CB334DD0053F2AF /* GlobalSlidingNavigationController.m in Sources */,
 				18335F2E1CACE70300B465A7 /* UIViewController+Alert.m in Sources */,
 				18335F491CACFBDE00B465A7 /* AFNetworkReachabilityManager.m in Sources */,
 				18335F2A1CACE70300B465A7 /* UIView+Extension.m in Sources */,
 				18335F341CACE77900B465A7 /* UIColor+Hex.m in Sources */,
 				18335F541CAD1AE100B465A7 /* NSString+Size.m in Sources */,
+				1899A0481CB6624B00636DAD /* UITextField+Placeholder.m in Sources */,
 				18335F241CACE70300B465A7 /* UIColor+Extension.m in Sources */,
 				18335F221CACE70300B465A7 /* UIBarButtonItem+Extension.m in Sources */,
 				18335F381CACE8CB00B465A7 /* NSDictionary+Extension.m in Sources */,
@@ -422,8 +494,10 @@
 				18335F2D1CACE70300B465A7 /* UIView+Snapshot.m in Sources */,
 				18335F501CACFBE900B465A7 /* YYHttpTool.m in Sources */,
 				18335EDE1CACE60600B465A7 /* main.m in Sources */,
+				1899A0441CB65A4E00636DAD /* FileManager.m in Sources */,
 				18335F2C1CACE70300B465A7 /* UIView+Scale.m in Sources */,
 				18335EFC1CACE65E00B465A7 /* AppDelegate.m in Sources */,
+				184FEA7A1CB3383C0053F2AF /* GlobalConst.m in Sources */,
 				18335F4A1CACFBDE00B465A7 /* AFSecurityPolicy.m in Sources */,
 				18335F261CACE70300B465A7 /* UIImage+Extension.m in Sources */,
 				18335F281CACE70300B465A7 /* UINavigationBar+Extension.m in Sources */,
@@ -576,6 +650,7 @@
 				18335EF21CACE60600B465A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
