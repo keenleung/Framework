@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark --------------------------
+#pragma mark UIView (Extension)
 @interface UIView (Extension)
 
 /**
@@ -95,11 +97,38 @@
 
 - (void)setBottomInView:(UIView *)view withMargin:(CGFloat)margin;
 - (void)setBottomToView:(UIView *)view withMargin:(CGFloat)margin;
+
+#pragma mark --------------------------
+#pragma mark block 方式
+/**
+ *  本组为设置View的大小, 采用 block 方式
+ */
+@property (nonatomic, strong, readonly) UIView *(^x_)(CGFloat);
+@property (nonatomic, strong, readonly) UIView *(^y_)(CGFloat);
+@property (nonatomic, strong, readonly) UIView *(^centerX_)(CGFloat);
+@property (nonatomic, strong, readonly) UIView *(^centerY_)(CGFloat);
+@property (nonatomic, strong, readonly) UIView *(^width_)(CGFloat);
+@property (nonatomic, strong, readonly) UIView *(^height_)(CGFloat);
+
+
 @end
 
+#pragma mark --------------------------
+#pragma mark UIView (Layer)
 @interface UIView (Layer)
 
 @property (nonatomic, assign) CGFloat cornerRadius;
+
+@end
+
+@interface UIView (Xib)
+
+/**
+ *  从 xib 中加载 view
+ *
+ *  @return View
+ */
++ (instancetype) loadFromXib;
 
 @end
 

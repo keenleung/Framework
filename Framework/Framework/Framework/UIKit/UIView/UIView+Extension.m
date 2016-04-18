@@ -8,7 +8,8 @@
 
 #import "UIView+Extension.h"
 
-
+#pragma mark --------------------------
+#pragma mark UIView (Extension)
 @implementation UIView (Extension)
 
 #pragma mark - location of view
@@ -361,10 +362,67 @@
     self.maxY = temp.minY - margin;
 }
 
+#pragma mark --------------------------
+#pragma mark block 方式
+- (UIView *(^)(CGFloat))x_{
+    
+    return ^(CGFloat x_){
+        
+        self.x = x_;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGFloat))y_{
+    
+    return ^(CGFloat y_){
+        
+        self.y = y_;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGFloat))centerX_{
+    
+    return ^(CGFloat centerX_){
+        
+        self.centerX = centerX_;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGFloat))centerY_{
+    
+    return ^(CGFloat centerY_){
+        
+        self.centerY = centerY_;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGFloat))width_{
+    
+    return ^(CGFloat width_){
+        
+        self.width = width_;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGFloat))height_{
+    
+    return ^(CGFloat height_){
+        
+        self.height = height_;
+        return self;
+    };
+}
 
 @end
 
 
+#pragma mark --------------------------
+#pragma mark UIView (Layer)
 @implementation UIView (Layer)
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {
@@ -375,5 +433,18 @@
 - (CGFloat)cornerRadius {
     return self.layer.cornerRadius;
 }
+
+@end
+
+
+#pragma mark --------------------------
+#pragma mark UIView (Xib)
+@implementation UIView (Xib)
+
++ (instancetype)loadFromXib{
+    
+    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
+}
+
 
 @end

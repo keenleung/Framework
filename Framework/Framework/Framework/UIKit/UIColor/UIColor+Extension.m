@@ -126,4 +126,15 @@
     
 }
 
+- (UIColor * (^)(CGFloat))alphaValue_Bock{
+    
+    return ^(CGFloat alphaValue){
+        
+        return [UIColor colorWithRed:self.redValue green:self.greenValue blue:self.blueValue alpha:alphaValue];
+        
+    };
+    
+}
+
+
 @end

@@ -52,4 +52,10 @@
                            stepCount:(NSUInteger)stepCount
                            stepIndex:(NSUInteger)stepIndex;
 
+/**
+ *  设置颜色透明度
+ */
+- (UIColor * (^)(CGFloat))alphaValue_Bock;
+
+
 @end
