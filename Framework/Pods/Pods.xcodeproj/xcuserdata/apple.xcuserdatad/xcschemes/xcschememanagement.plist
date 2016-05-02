@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CTAssetsPickerController-CTAssetsPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CTAssetsPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PBFlatUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +47,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1CA2A38C1D6952AFC6D772AEBB0EC7FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5C12595FB14AA38D0A7CB1208D1AC75D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6E9B51462D20815FBFEB2F90F10A4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DF69F5434DAED2AE2C42CDBDA7EE144</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A623FA9CCD4996A13A62FE9654BAFB26</key>
+		<key>AD40B81E664EB01B939298CC1BF064AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C761375DA3B60F4BA00400DC13D45911</key>
+		<key>B36781012B88C87DFD395925D8FAABF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5199CAF91AD2A0B2BA4F34BBAD8A077</key>
 		<dict>
 			<key>primary</key>
 			<true/>

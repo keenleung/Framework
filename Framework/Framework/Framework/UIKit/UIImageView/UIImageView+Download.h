@@ -33,6 +33,58 @@
 
 @interface UIImageView (Download)
 
+#pragma mark ----------- 包含 进度---------------
+
+/**
+ *  根据网路状态,设置imageView显示的图片(有进度提示)
+ *
+ *  @param originalImageUrl  原图URL
+ *  @param thumbnailImageURL 缩略图URL
+ *  @param placehloderImage  占位图片
+ *  @param options           图片下载模式
+ *  @param progressBlock     进度
+ *  @param completedBlock    获取图片完毕之后会调用的block
+ */
+-(void) setImageWithOriginalImageUrl: (NSString *)originalImageUrl thumbnailImageURL:(NSString *)thumbnailImageURL placehloderImage:(UIImage *)placehloderImage options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock;
+
+
+/**
+ *  根据网路状态,设置imageView显示的图片(有进度提示)
+ *
+ *  @param originalImageUrl  原图URL
+ *  @param thumbnailImageURL 缩略图URL
+ *  @param placehloderImage  占位图片
+ *  @param progressBlock     进度
+ *  @param completedBlock    获取图片完毕之后会调用的block
+ */
+-(void) setImageWithOriginalImageUrl: (NSString *)originalImageUrl thumbnailImageURL:(NSString *)thumbnailImageURL placehloderImage:(UIImage *)placehloderImage progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock;
+
+/**
+ *  根据网路状态,设置imageView显示的图片(有进度提示)
+ *
+ *  @param originalImageUrl  原图URL
+ *  @param thumbnailImageURL 缩略图URL
+ *  @param options           图片下载模式
+ *  @param progressBlock     进度
+ *  @param completedBlock    获取图片完毕之后会调用的block
+ */
+-(void) setImageWithOriginalImageUrl: (NSString *)originalImageUrl thumbnailImageURL:(NSString *)thumbnailImageURL  options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock;
+
+/**
+ *  根据网路状态,设置imageView显示的图片(有进度提示)
+ *
+ *  @param originalImageUrl  原图URL
+ *  @param thumbnailImageURL 缩略图URL
+ *  @param progressBlock     进度
+ *  @param completedBlock    获取图片完毕之后会调用的block
+ */
+-(void) setImageWithOriginalImageUrl: (NSString *)originalImageUrl thumbnailImageURL:(NSString *)thumbnailImageURL  progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock;
+
+
+
+
+#pragma mark ----------- 不包含 进度---------------
+
 /**
  *  根据网路状态,设置imageView显示的图片
  *

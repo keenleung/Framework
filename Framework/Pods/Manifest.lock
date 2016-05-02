@@ -14,19 +14,28 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - CTAssetsPickerController (3.3.2-alpha):
+    - PureLayout (~> 3.0.0)
   - PBFlatUI (1.1.0)
+  - PureLayout (3.0.1)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
+  - CTAssetsPickerController (~> 3.3.2-alpha)
   - PBFlatUI (~> 1.1.0)
   - SDWebImage (~> 3.7.5)
+  - SVProgressHUD (~> 2.0.3)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  CTAssetsPickerController: ef06977de8e0b6d6ff11a324d357a12335a61243
   PBFlatUI: d797c6de1d28245287d695d74178dc75895d0bd9
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
 COCOAPODS: 0.39.0
