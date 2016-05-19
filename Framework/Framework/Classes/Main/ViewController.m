@@ -55,9 +55,12 @@ __PRAGMA_POP_NO_EXTRA_ARG_WARNINGS \
 _Pragma("clang diagnostic push") \
 _Pragma("clang diagnostic ignored \"-Wformat-extra-args\"")
 
+#import "InfiniteScrollView.h"
+
+#import "SQLTool.h"
 
 
-@interface ViewController ()
+@interface ViewController ()<InfiniteScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
@@ -71,125 +74,90 @@ _Pragma("clang diagnostic ignored \"-Wformat-extra-args\"")
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //    self.textField.placeholderColor = [UIColor redColor];
-    //    self.textField.placeholder = @"请输入内容";
-    //    
-    //    [self.imageView addTapGestureWithTarger:self action:@selector(imageViewTap)];
-    //    
-    //    UIImage *image = [UIImage imageNamed:@"300-4.jpeg"];
-    //    //UIImage *image = nil;
-    //    self.imageView.image = [image circleImage];
-    //    
-    //    self.blackView.backgroundColor = self.blackView.backgroundColor.alphaValue_Bock(0.75);
+    //    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES).lastObject;
+    //    NSString *dbName = [([NSBundle mainBundle].infoDictionary)[@"CFBundleName"] stringByAppendingString:@".sqlite"];
+    //    NSString *dbPath = [path stringByAppendingPathComponent:dbName];
+    //
+    //    NSLog(@"%@", dbPath);
     
-    //[SVProgressHUD showWithStatus:@"dadad"];
+    //    NSString *sql = @"select * from t_test where name = 'keen'";
     
-    //NSObject *obj = NEW(NSObject);
+    //    [SQLTool executeQuery:sql resultBlock:^(FMResultSet *set) {
+    //        
+    //        NSLog(@"%@", [set stringForColumn:@"name"]);
+    //        NSLog(@"%zd", [set intForColumn:@"age"]);
+    //        NSLog(@"%lf", [set doubleForColumn:@"score"]);
+    //    }];
     
-    //    //NSObject *obj = [[NSObject alloc] init];
-    //    Person *p = safe(OBJ(Person));
-    //    p.name = @"keen";
-    //NSLog(@"%@", p.name);
-    
-    //[FPSLabel showAtPoint:CGPointMake(100, 100)];
-    
-    //    void (^completedBlock)() = nil;
-    //    
-    //    NSString *str = nil;
-    
-    //Exception(str != nil, @"字符串为空");
-    
-    PlaceholderTextView *textView = [[PlaceholderTextView alloc] init];
-    textView.frame = CGRectMake(0, 200, 200, 200);
-    textView.backgroundColor = [UIColor redColor];
-    textView.placeholder = @"keenleung";
-    [self.view addSubview:textView];
+    //[self createTB];
     
 }
 
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    //[FPSLabel showAtPoint:CGPointMake(100, 100)];
-}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    //[self.blackView addShakeAnimation];
-    [self.view addShakeAnimation];
-    
-    //[FPSLabel dismiss];
-    
-    //    UIViewController *vc = [[UIViewController alloc] init];
-    //    [self.navigationController pushViewController:vc animated:YES];
-    //    
-    //    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    //    view.backgroundColor = [UIColor redColor];
-    //    [[UIApplication sharedApplication].keyWindow addSubview:view];
-    
-    
-    
-    //    self.blackView.x(self.blackView.frame.origin.x + 10);
-    //    self.blackView.width(self.blackView.frame.size.width + 10);
-    //    self.blackView.height(self.blackView.frame.size.height + 10);
-    
-    /*
-     CGFloat x = self.blackView.frame.origin.x;
-     CGFloat width = self.blackView.frame.size.width;
-     CGFloat height = self.blackView.frame.size.height;
-     
-     self.blackView.x(x + 10).width(width + 10).height(height + 10);
-     
-     */
-    
-    //self.blackView.x_(self.blackView.x + 10).height_(self.blackView.height + 10).width_(self.blackView.width + 10);
-    
-    //self.blackView.width_(self.blackView.width + 10);
-    
-    //    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 30, 30)];
-    //    leftView.backgroundColor = [UIColor redColor];
-    //    
-    //    self.blackView.leftView = leftView;
-    //    //[self.view addSubview:leftView];
-    //    
-    //    NSArray *arr = @[@"1", @"22", @"333", @"4444", @"55555", @"666666"];
-    //    
-    //    NSArray *arr2 = [arr compact_:^NSString *(NSString *obj) {
-    //        
-    //        return [obj stringByAppendingString:@"@.jpg"];
-    //    }];
-    //    
-    //    NSLog(@"%@", arr2);
-    
-    //[PhotoTool savePhotoToAppAlbum:[UIImage imageNamed:@"300-4.jpeg"]];
-    
-    //    [PhotoTool takePictureWithCompletion:^(UIImage *image) {
-    //        
-    //        NSLog(@"%lf", image.size.width);
-    //        
-    //        self.imageView.image = image;
-    //    }];
-    
-    
-    //    [PhotoTool takePicturesWithMaxCount:0 showsSelectionIndex:NO completion:^(NSArray<UIImage *> *images) {
-    //        
-    //        NSLog(@"%zd", images.count);
-    //        
-    //        [images enumerateObjectsUsingBlock:^(UIImage * _Nonnull obj, NSUInteger i, BOOL * _Nonnull stop) {
-    //            
-    //            UIImageView *imageView = [[UIImageView alloc] init];
-    //            imageView.image = obj;
-    //            imageView.frame = CGRectMake((i % 3) * 110, (i / 3) * 110 + 100, 100, 100);
-    //            [self.view addSubview:imageView];
-    //            
-    //        }];
-    //    }];
 }
 
-- (void) imageViewTap{
+- (void)executeStatement{
     
-    //NSLog(@"111");
+    NSArray *sqls = @[
+                      @"select name, age from t_test",
+                      @"select * from t_test",
+                      @"select count(*) from t_test"
+                      ];
+    [SQLTool executeInStatements:sqls resultBlock:^(NSDictionary *dict) {
+        
+        NSLog(@"%@", dict);
+    }];
 }
+
+- (void)createTB{
+    NSString *sql = @"create table if not exists t_test(id integer primary key  autoincrement, name text, age integer, score real default 60)";
+    
+    [SQLTool executeUpdate:sql success:^{
+        
+        NSLog(@"创建表成功");
+    } fail:^{
+        
+        NSLog(@"创建表失败");
+    }];
+}
+
+- (void) insertData{
+    
+    //    NSString *name = @"keen";
+    //    int age = 24;
+    //    double score = 78;
+    //NSString *sql = [NSString stringWithFormat:@"insert into t_test(name,age,score) values('%@',%zd,%lf)", name, age, score];
+    
+    NSArray *sqls = @[
+                      @"insert into t_test(name,age,score) values('keen',24,78)",
+                      @"insert into t_test(name,age,score) values('andi', 26,78.9)",
+                      @"insert into t_test_test(name,age,score) values('phoenix', 17,54.5)",
+                      ];
+    
+    [SQLTool executeInTransaction:sqls success:^{
+        
+        NSLog(@"执行成功");
+        
+    } fail:^{
+        
+        NSLog(@"执行失败");
+    }];
+}
+
+- (void)updateData{
+    
+    NSString *sql = @"update t_test_te set score = 90 where name = 'keen'";
+    
+    [SQLTool executeUpdate:sql success:^{
+        
+        NSLog(@"更新成功");
+    } fail:^{
+        
+        NSLog(@"更新失败");
+    }];
+}
+
 
 @end

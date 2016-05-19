@@ -46,6 +46,17 @@ fprintf(stderr, "-------\n");                                               \
 #define iphone4 (ScreenH == 480)
 
 #pragma mark --------------------------
+#pragma mark 手机系统类型
+/** 系统适配*/
+#define isIOS(version) ([[UIDevice currentDevice].systemVersion floatValue] >= version)
+
+#pragma mark --------------------------
+#pragma mark 九宫格: 根据总个数和总列数, 计算出总行数
+/** 九宫格: 根据总个数和总列数, 计算出总行数*/
+#define ViewRow(count,column) (((count) + (column - 1)) / (column))
+
+
+#pragma mark --------------------------
 #pragma mark ConciseKitSpecs
 /** From ConciseKitSpecs*/
 #define eql(a,b)   [(a) isEqual:(b)]

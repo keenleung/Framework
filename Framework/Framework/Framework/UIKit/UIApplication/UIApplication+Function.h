@@ -4,7 +4,9 @@
 //
 //  Created by Apple on 16/4/8.
 //  Copyright © 2016年 Apple. All rights reserved.
-//  UIApplication 的常用功能
+//
+
+// UIApplication 的常用功能
 
 #import <UIKit/UIKit.h>
 

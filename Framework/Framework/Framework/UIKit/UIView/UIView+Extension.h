@@ -121,6 +121,8 @@
 
 @end
 
+#pragma mark --------------------------
+#pragma mark UIView (Xib)
 @interface UIView (Xib)
 
 /**
@@ -131,6 +133,20 @@
 + (instancetype) loadFromXib;
 
 @end
+
+#pragma mark --------------------------
+#pragma mark UIView (Controller)
+@interface UIView (Controller)
+
+/**
+ *   获取当前View的所在控制器对象
+ *
+ *  @return View所在的控制器
+ */
+-(UIViewController *)getCurrentViewController;
+
+@end
+
 
 
 

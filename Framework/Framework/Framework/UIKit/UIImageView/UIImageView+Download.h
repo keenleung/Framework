@@ -4,28 +4,10 @@
 //
 //  Created by Apple on 16/4/16.
 //  Copyright © 2016年 Apple. All rights reserved.
-//  根据网路状态，下载图片
+//
 
-/*
- if (缓存中有原图) {
- self.imageView.image = 原图;
- } else {
- if (Wifi环境) {
- 下载显示原图
- } else if (手机自带网络) {
- if (3G\4G环境下仍然下载原图) {
- 下载显示原图
- } else {
- 下载显示小图
- }
- } else {
- if (缓存中有小图) {
- self.imageView.image = 小图;
- } else {
- self.imageView.image = 占位图片;
- }
- }
- }*/
+// 根据网路状态，下载图片
+// 使用 AFN 框架
 
 #import <UIKit/UIKit.h>
 #import <AFNetworking.h>

@@ -23,7 +23,7 @@
     if (cell == nil) {
         return;
     }
-    NSLog(@"%@", NSStringFromCGRect(cell.frame));
+    
     // cell 的 y 值是否大于指定的高度
     CGFloat offsetY = 0;
     if (cell.frame.origin.y != height) {
