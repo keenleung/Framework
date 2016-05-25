@@ -3,10 +3,11 @@
 //
 
 #import "YYHttpTool.h"
+#import <AFNetworking.h>
 
 
 @implementation YYHttpTool
-+(void)get:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
++(void)getWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
     //1.获得请求管理者
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
@@ -23,12 +24,29 @@
     }];
 }
 
-+(NSURLSessionDataTask *)post:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
++(NSURLSessionDataTask *)postWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
     //1.获得请求管理者
-    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    NSURLSessionDataTask *dataTask = [mgr POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    //申明返回的结果是json类型
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    //申明请求的数据是json类型
+    manager.requestSerializer=[AFJSONRequestSerializer serializer];
+    //    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    //如果报接受类型不一致请替换一致text/html或别的
+    
+    //    NSSet *set = manager.responseSerializer.acceptableContentTypes;
+    //    NSMutableSet *setM = [NSMutableSet setWithSet:set];
+    //    [setM addObject:@"text/plain"];
+    //    AFHTTPResponseSerializer *responseSerializer = [[AFHTTPResponseSerializer alloc] init];
+    //    responseSerializer.acceptableContentTypes = setM;
+    //    manager.responseSerializer = responseSerializer;
+    
+    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html",@"text/plain", nil];
+    
+    NSURLSessionDataTask *dataTask = [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (success) {
             success(responseObject);
@@ -45,7 +63,7 @@
 }
 
 
-+(NSURLSessionDataTask *)upload:(NSString *)url params:(NSDictionary *)params filePath:(NSString *)filePath progress:(void(^)(NSInteger completedUnitCount,NSInteger totalUnitCount))progress success:(void (^)(id))success failure:(void (^)(NSError *))failure
++(NSURLSessionDataTask *)uploadWithURL:(NSString *)url params:(NSDictionary *)params filePath:(NSString *)filePath progress:(void(^)(NSInteger completedUnitCount,NSInteger totalUnitCount))progress success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
     //1.获得请求管理者
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];

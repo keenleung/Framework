@@ -16,6 +16,8 @@ PODS:
     - AFNetworking/NSURLSession
   - CTAssetsPickerController (3.3.2-alpha):
     - PureLayout (~> 3.0.0)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
   - PBFlatUI (1.1.0)
   - PureLayout (3.0.1)
   - SDWebImage (3.7.5):
@@ -26,6 +28,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
   - CTAssetsPickerController (~> 3.3.2-alpha)
+  - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 3.1.0)
   - PBFlatUI (~> 1.1.0)
   - SDWebImage (~> 3.7.5)
   - SVProgressHUD (~> 2.0.3)
@@ -33,6 +37,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   CTAssetsPickerController: ef06977de8e0b6d6ff11a324d357a12335a61243
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   PBFlatUI: d797c6de1d28245287d695d74178dc75895d0bd9
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461

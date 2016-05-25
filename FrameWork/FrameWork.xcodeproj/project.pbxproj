@@ -68,6 +68,15 @@
 		18BC68A61CB761610043E352 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC68A51CB761610043E352 /* UIImageView+SDWebImage.m */; };
 		18BC68AD1CB791570043E352 /* UITableView+Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC68AC1CB791570043E352 /* UITableView+Section.m */; };
 		18BC68B01CB795020043E352 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC68AF1CB795020043E352 /* TableViewController.m */; };
+		18BDBC571CF5E31600538CC4 /* shop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BDBC4E1CF5E31600538CC4 /* shop.plist */; };
+		18BDBC581CF5E31600538CC4 /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBC501CF5E31600538CC4 /* ShopCell.m */; };
+		18BDBC591CF5E31600538CC4 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BDBC511CF5E31600538CC4 /* ShopCell.xib */; };
+		18BDBC5A1CF5E31600538CC4 /* WaterFlowTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBC531CF5E31600538CC4 /* WaterFlowTestVC.m */; };
+		18BDBC5B1CF5E31600538CC4 /* WaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBC561CF5E31600538CC4 /* WaterflowLayout.m */; };
+		18BDBC5E1CF5E36900538CC4 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBC5D1CF5E36900538CC4 /* Shop.m */; };
+		18BFC74D1CF158C1001BBDB1 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC74C1CF158C1001BBDB1 /* UIScrollView+Extension.m */; };
+		18BFC7511CF15DE7001BBDB1 /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC7501CF15DE7001BBDB1 /* UserDefaults.m */; };
+		18C21B711CF13D66009FF806 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C21B701CF13D66009FF806 /* NSString+Extension.m */; };
 		18C4AFBE1CEDBF8400F9FD69 /* TestPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFBD1CEDBF8400F9FD69 /* TestPlayerVC.m */; };
 		18C4AFC41CEDBFF800F9FD69 /* Player.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C4AFC01CEDBFF800F9FD69 /* Player.bundle */; };
 		18C4AFC51CEDBFF800F9FD69 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFC21CEDBFF800F9FD69 /* PlayerView.m */; };
@@ -192,6 +201,22 @@
 		18BC68AC1CB791570043E352 /* UITableView+Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Section.m"; sourceTree = "<group>"; };
 		18BC68AE1CB795020043E352 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		18BC68AF1CB795020043E352 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		18BDBC4E1CF5E31600538CC4 /* shop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shop.plist; sourceTree = "<group>"; };
+		18BDBC4F1CF5E31600538CC4 /* ShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
+		18BDBC501CF5E31600538CC4 /* ShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCell.m; sourceTree = "<group>"; };
+		18BDBC511CF5E31600538CC4 /* ShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
+		18BDBC521CF5E31600538CC4 /* WaterFlowTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowTestVC.h; sourceTree = "<group>"; };
+		18BDBC531CF5E31600538CC4 /* WaterFlowTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowTestVC.m; sourceTree = "<group>"; };
+		18BDBC551CF5E31600538CC4 /* WaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterflowLayout.h; sourceTree = "<group>"; };
+		18BDBC561CF5E31600538CC4 /* WaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayout.m; sourceTree = "<group>"; };
+		18BDBC5C1CF5E36900538CC4 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		18BDBC5D1CF5E36900538CC4 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		18BFC74B1CF158C1001BBDB1 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
+		18BFC74C1CF158C1001BBDB1 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
+		18BFC74F1CF15DE7001BBDB1 /* UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
+		18BFC7501CF15DE7001BBDB1 /* UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaults.m; sourceTree = "<group>"; };
+		18C21B6F1CF13D66009FF806 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		18C21B701CF13D66009FF806 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		18C4AFBC1CEDBF8400F9FD69 /* TestPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPlayerVC.h; sourceTree = "<group>"; };
 		18C4AFBD1CEDBF8400F9FD69 /* TestPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPlayerVC.m; sourceTree = "<group>"; };
 		18C4AFC01CEDBFF800F9FD69 /* Player.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Player.bundle; sourceTree = "<group>"; };
@@ -412,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				18335F0E1CACE70300B465A7 /* UIKit+Extension.h */,
+				18BFC74A1CF15835001BBDB1 /* ScrollView */,
 				18C4AFC71CEDC2A700F9FD69 /* UIDevice */,
 				18BC68AA1CB78F450043E352 /* UITableView */,
 				18BC689E1CB752BF0043E352 /* UIImageView */,
@@ -539,6 +565,8 @@
 			children = (
 				18335F521CAD1AE100B465A7 /* NSString+Size.h */,
 				18335F531CAD1AE100B465A7 /* NSString+Size.m */,
+				18C21B6F1CF13D66009FF806 /* NSString+Extension.h */,
+				18C21B701CF13D66009FF806 /* NSString+Extension.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -546,6 +574,8 @@
 		184FEA641CB3346F0053F2AF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18BDBC4C1CF5E31600538CC4 /* 瀑布流 */,
+				18BFC74E1CF15DAA001BBDB1 /* 用户偏好 */,
 				18C4AFB31CEDBDDE00F9FD69 /* 播放远程视频 */,
 				182BF7E21CDD89E200D05AC3 /* 无限轮播器 */,
 				185C71731CE557EC00C87FC5 /* 网易新闻结构 */,
@@ -678,6 +708,57 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
+		18BDBC4C1CF5E31600538CC4 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				18BDBC541CF5E31600538CC4 /* WaterFlowlayout */,
+				18BDBC4D1CF5E31600538CC4 /* Example */,
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		18BDBC4D1CF5E31600538CC4 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				18BDBC4E1CF5E31600538CC4 /* shop.plist */,
+				18BDBC5C1CF5E36900538CC4 /* Shop.h */,
+				18BDBC5D1CF5E36900538CC4 /* Shop.m */,
+				18BDBC4F1CF5E31600538CC4 /* ShopCell.h */,
+				18BDBC501CF5E31600538CC4 /* ShopCell.m */,
+				18BDBC511CF5E31600538CC4 /* ShopCell.xib */,
+				18BDBC521CF5E31600538CC4 /* WaterFlowTestVC.h */,
+				18BDBC531CF5E31600538CC4 /* WaterFlowTestVC.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		18BDBC541CF5E31600538CC4 /* WaterFlowlayout */ = {
+			isa = PBXGroup;
+			children = (
+				18BDBC551CF5E31600538CC4 /* WaterflowLayout.h */,
+				18BDBC561CF5E31600538CC4 /* WaterflowLayout.m */,
+			);
+			path = WaterFlowlayout;
+			sourceTree = "<group>";
+		};
+		18BFC74A1CF15835001BBDB1 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				18BFC74B1CF158C1001BBDB1 /* UIScrollView+Extension.h */,
+				18BFC74C1CF158C1001BBDB1 /* UIScrollView+Extension.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		18BFC74E1CF15DAA001BBDB1 /* 用户偏好 */ = {
+			isa = PBXGroup;
+			children = (
+				18BFC74F1CF15DE7001BBDB1 /* UserDefaults.h */,
+				18BFC7501CF15DE7001BBDB1 /* UserDefaults.m */,
+			);
+			path = "用户偏好";
+			sourceTree = "<group>";
+		};
 		18C4AFB31CEDBDDE00F9FD69 /* 播放远程视频 */ = {
 			isa = PBXGroup;
 			children = (
@@ -792,7 +873,9 @@
 				18335EEC1CACE60600B465A7 /* LaunchScreen.storyboard in Resources */,
 				18335F291CACE70300B465A7 /* UINavigationBar.bundle in Resources */,
 				18335EE91CACE60600B465A7 /* Assets.xcassets in Resources */,
+				18BDBC571CF5E31600538CC4 /* shop.plist in Resources */,
 				184FEA711CB336210053F2AF /* navigationButtonReturn@3x.png in Resources */,
+				18BDBC591CF5E31600538CC4 /* ShopCell.xib in Resources */,
 				18C4AFC41CEDBFF800F9FD69 /* Player.bundle in Resources */,
 				18C4AFC61CEDBFF800F9FD69 /* PlayerView.xib in Resources */,
 				184FEA731CB336210053F2AF /* navigationButtonReturnClick@2x.png in Resources */,
@@ -866,11 +949,14 @@
 				18335F2B1CACE70300B465A7 /* UIView+KBView.m in Sources */,
 				1856626C1CC3F25F001E3069 /* Person.m in Sources */,
 				18335F2E1CACE70300B465A7 /* UIViewController+Alert.m in Sources */,
+				18BDBC5E1CF5E36900538CC4 /* Shop.m in Sources */,
+				18BFC74D1CF158C1001BBDB1 /* UIScrollView+Extension.m in Sources */,
 				1864B03D1CE017B30005ADE1 /* SQLTool.m in Sources */,
 				180C76341CD6FBAE009A91CD /* PlaceholderTextView.m in Sources */,
 				18335F2A1CACE70300B465A7 /* UIView+Extension.m in Sources */,
 				18335F341CACE77900B465A7 /* UIColor+Hex.m in Sources */,
 				1864B0351CE016F40005ADE1 /* FMDatabaseAdditions.m in Sources */,
+				18BDBC581CF5E31600538CC4 /* ShopCell.m in Sources */,
 				18BC68B01CB795020043E352 /* TableViewController.m in Sources */,
 				185C717C1CE55ADA00C87FC5 /* TestBaseViewController.m in Sources */,
 				18335F541CAD1AE100B465A7 /* NSString+Size.m in Sources */,
@@ -878,6 +964,7 @@
 				1899A0481CB6624B00636DAD /* UITextField+Placeholder.m in Sources */,
 				18335F241CACE70300B465A7 /* UIColor+Extension.m in Sources */,
 				188491541CC286E100EB8FA0 /* UIImageView+Download.m in Sources */,
+				18C21B711CF13D66009FF806 /* NSString+Extension.m in Sources */,
 				18335F221CACE70300B465A7 /* UIBarButtonItem+Extension.m in Sources */,
 				18335F381CACE8CB00B465A7 /* NSDictionary+Extension.m in Sources */,
 				18BC68A11CB753B60043E352 /* UIImageView+Gesture.m in Sources */,
@@ -887,6 +974,7 @@
 				18BC68961CB737360043E352 /* UITextField+PlaceholderColorByRuntime.m in Sources */,
 				1803BF7D1CC5A98200EEF0F0 /* GlobalConst.m in Sources */,
 				18BC68AD1CB791570043E352 /* UITableView+Section.m in Sources */,
+				18BDBC5B1CF5E31600538CC4 /* WaterflowLayout.m in Sources */,
 				1864B0341CE016F40005ADE1 /* FMDatabase.m in Sources */,
 				1864B0361CE016F40005ADE1 /* FMDatabasePool.m in Sources */,
 				18C4AFC51CEDBFF800F9FD69 /* PlayerView.m in Sources */,
@@ -898,11 +986,13 @@
 				18335EDE1CACE60600B465A7 /* main.m in Sources */,
 				18335F2C1CACE70300B465A7 /* UIView+Scale.m in Sources */,
 				18C4AFBE1CEDBF8400F9FD69 /* TestPlayerVC.m in Sources */,
+				18BDBC5A1CF5E31600538CC4 /* WaterFlowTestVC.m in Sources */,
 				1803BF851CC5AA8C00EEF0F0 /* FPSLabel.m in Sources */,
 				18BC68A61CB761610043E352 /* UIImageView+SDWebImage.m in Sources */,
 				18335EFC1CACE65E00B465A7 /* AppDelegate.m in Sources */,
 				1803BF801CC5A98200EEF0F0 /* PhoneType.m in Sources */,
 				1817128F1CC690BE00DD573B /* PhotoTool.m in Sources */,
+				18BFC7511CF15DE7001BBDB1 /* UserDefaults.m in Sources */,
 				18335F261CACE70300B465A7 /* UIImage+Extension.m in Sources */,
 				18335F281CACE70300B465A7 /* UINavigationBar+Extension.m in Sources */,
 				1803BF811CC5A98200EEF0F0 /* FileManager.m in Sources */,

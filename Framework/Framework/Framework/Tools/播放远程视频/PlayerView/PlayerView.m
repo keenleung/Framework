@@ -2,8 +2,8 @@
 //  PlayerView.m
 //  02-播放远程视频-封装播放器
 //
-//  Created by 王顺子 on 15/10/10.
-//  Copyright © 2015年 小码哥. All rights reserved.
+//  Created by keen on 16/5/10.
+//  Copyright © 2015年 keenleung. All rights reserved.
 //
 
 #import "PlayerView.h"

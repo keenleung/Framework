@@ -197,4 +197,166 @@
     return image;
 }
 
+- (UIImage *)circleImageWithBorder:(CGFloat)borderWidth andBorderColor:(UIColor *)borderColor{
+    
+    // 2.开启上下文
+    CGFloat imageW = self.size.height + 2 * borderWidth;
+    CGFloat imageH = self.size.height + 2 * borderWidth;
+    CGSize imageSize = CGSizeMake(imageW, imageH);
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
+    
+    // 3.取得当前的上下文
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    // 4.画边框(大圆)
+    [borderColor set];
+    CGFloat bigRadius = imageW * 0.5; // 大圆半径
+    CGFloat centerX = bigRadius; // 圆心
+    CGFloat centerY = bigRadius;
+    CGContextAddArc(ctx, centerX, centerY, bigRadius, 0, M_PI * 2, 0);
+    CGContextFillPath(ctx); // 画圆
+    
+    // 5.小圆
+    CGFloat smallRadius = bigRadius - borderWidth;
+    CGContextAddArc(ctx, centerX, centerY, smallRadius, 0, M_PI * 2, 0);
+    // 裁剪(后面画的东西才会受裁剪的影响)
+    CGContextClip(ctx);
+    
+    // 6.画图
+    [self drawInRect:CGRectMake(borderWidth, borderWidth, self.size.height, self.size.height)];
+    
+    // 7.取图
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 8.结束上下文
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
+- (instancetype)roundedWithRadius:(CGFloat)radius {
+    // the size of CGContextRef
+    int w = self.size.width;
+    int h = self.size.height;
+    
+    UIImage *img = self;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedFirst);
+    CGRect rect = CGRectMake(0, 0, w, h);
+    
+    CGContextBeginPath(context);
+    addRoundedRectToPath(context, rect, radius, radius);
+    CGContextClosePath(context);
+    CGContextClip(context);
+    CGContextDrawImage(context, CGRectMake(0, 0, w, h), img.CGImage);
+    CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+    CGContextRelease(context);
+    CGColorSpaceRelease(colorSpace);
+    UIImage *image = [UIImage imageWithCGImage:imageMasked];
+    CGImageRelease(imageMasked);
+    return image;
+}
+
+void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth,
+                          float ovalHeight) {
+    float fw, fh;
+    if (ovalWidth == 0 || ovalHeight == 0) {
+        CGContextAddRect(context, rect);
+        return;
+    }
+    
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
+    CGContextScaleCTM(context, ovalWidth, ovalHeight);
+    fw = CGRectGetWidth(rect) / ovalWidth;
+    fh = CGRectGetHeight(rect) / ovalHeight;
+    
+    CGContextMoveToPoint(context, fw, fh/2);  // Start at lower right corner
+    CGContextAddArcToPoint(context, fw, fh, fw/2, fh, 1);  // Top right corner
+    CGContextAddArcToPoint(context, 0, fh, 0, fh/2, 1); // Top left corner
+    CGContextAddArcToPoint(context, 0, 0, fw/2, 0, 1); // Lower left corner
+    CGContextAddArcToPoint(context, fw, 0, fw, fh/2, 1); // Back to lower right
+    
+    CGContextClosePath(context);
+    CGContextRestoreGState(context);
+}
+
+- (instancetype)cutWithRect:(CGRect)rect {
+    CGImageRef imageRef = self.CGImage;
+    CGImageRef subImageRef = CGImageCreateWithImageInRect(imageRef, rect);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, rect, subImageRef);
+    UIImage *image = [UIImage imageWithCGImage:subImageRef];
+    UIGraphicsEndImageContext();
+    CGImageRelease(subImageRef);
+    return image;
+}
+
+- (UIImage *)scaleToSize:(CGSize)targetSize {
+    UIImage *newImage = nil;
+    CGSize imageSize = self.size;
+    CGFloat width = imageSize.width;
+    CGFloat height = imageSize.height;
+    CGFloat targetWidth = targetSize.width;
+    CGFloat targetHeight = targetSize.height;
+    CGFloat scaleFactor = 0.0;
+    CGFloat scaledWidth = targetWidth;
+    CGFloat scaledHeight = targetHeight;
+    CGPoint thumbnailPoint = CGPointMake(0.0, 0.0);
+    if (CGSizeEqualToSize(imageSize, targetSize) == NO) {
+        CGFloat widthFactor = targetWidth / width;
+        CGFloat heightFactor = targetHeight / height;
+        
+        if (widthFactor > heightFactor) {
+            scaleFactor = widthFactor; // scale to fit height
+        } else {
+            scaleFactor = heightFactor; // scale to fit width
+        }
+        scaledWidth  = width * scaleFactor;
+        scaledHeight = height * scaleFactor;
+        
+        // center the image
+        if (widthFactor > heightFactor) {
+            thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5;
+        } else if (widthFactor < heightFactor) {
+            thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
+        }
+    }
+    UIGraphicsBeginImageContext(targetSize); // this will crop
+    CGRect thumbnailRect = CGRectZero;
+    thumbnailRect.origin = thumbnailPoint;
+    thumbnailRect.size.width  = scaledWidth;
+    thumbnailRect.size.height = scaledHeight;
+    
+    [self drawInRect:thumbnailRect];
+    
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
+    if(newImage == nil) {
+    }
+    //pop the context to get back to the default
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
+- (UIImage *)scaleToFitScreen {
+    CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
+    CGFloat maxWidth = screenW * 2;
+    if (self.size.width < maxWidth) {
+        return self;
+    }
+    CGFloat btWidth = 0.0f;
+    CGFloat btHeight = 0.0f;
+    if (self.size.width > self.size.height) {
+        btHeight = maxWidth;
+        btWidth = self.size.width * (maxWidth / self.size.height);
+    } else {
+        btWidth = maxWidth;
+        btHeight = self.size.height * (maxWidth / self.size.width);
+    }
+    CGSize targetSize = CGSizeMake(btWidth, btHeight);
+    return [self scaleToSize:targetSize];
+}
+
+
 @end

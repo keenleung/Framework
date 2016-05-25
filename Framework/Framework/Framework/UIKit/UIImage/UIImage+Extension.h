@@ -171,11 +171,54 @@ typedef NS_ENUM(NSUInteger, UIImageMaskOption) {
 - (UIImage *)imageByStretchInCenterPoint;
 
 /**
- *  返回一张 圆角 图片
+ *  返回一张 圆形 图片
  *
  *  @return UIImage
  */
 - (UIImage *)circleImage;
 
+/**
+ *  绘制有边框的圆形图片
+ *
+ *  @param borderWidth 边框的宽度
+ *  @param borderColor 边框的颜色
+ *
+ *  @return UIImage
+ */
+- (UIImage *)circleImageWithBorder:(CGFloat)borderWidth andBorderColor:(UIColor *)borderColor;
+
+/**
+ *  绘制圆角图片
+ *
+ *  @param radius 圆角的大小 CGFloat
+ *
+ *  @return 圆角图片
+ */
+- (UIImage *)roundedWithRadius:(CGFloat)radius;
+
+/**
+ *  裁剪图片
+ *
+ *  @param rect 裁剪的大小 CGRect
+ *
+ *  @return 裁剪之后的图片 UIImage
+ */
+- (UIImage *)cutWithRect:(CGRect)rect;
+
+/**
+ *  伸缩图片到指定大小
+ *
+ *  @param targetSize 伸缩的大小 CGSize
+ *
+ *  @return 新的图片 UIImage
+ */
+- (UIImage *)scaleToSize:(CGSize)targetSize;
+
+/**
+ *  伸缩图片到适合屏幕
+ *
+ *  @return 新的图片 UIImage
+ */
+- (UIImage *)scaleToFitScreen;
 
 @end

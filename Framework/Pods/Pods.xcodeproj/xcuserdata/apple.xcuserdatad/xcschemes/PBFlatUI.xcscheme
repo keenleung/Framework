@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E2F394570D847CCC51D4F9FB'
+               BlueprintIdentifier = '762C83B5F54CB72FA53B1DB2'
                BlueprintName = 'PBFlatUI'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPBFlatUI.a'>

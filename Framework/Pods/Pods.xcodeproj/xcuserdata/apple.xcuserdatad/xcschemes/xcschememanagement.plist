@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PBFlatUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,22 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8F74D9EA91F4C43190670066BAC37D44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD40B81E664EB01B939298CC1BF064AA</key>
+		<key>9C0375B148DA584DFFECBF5C21DDC598</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B36781012B88C87DFD395925D8FAABF0</key>
+		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5199CAF91AD2A0B2BA4F34BBAD8A077</key>
+		<key>B9220EC8300DD06449F6E591B0FB911D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBF566752727394173EBDBF484A5C12E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

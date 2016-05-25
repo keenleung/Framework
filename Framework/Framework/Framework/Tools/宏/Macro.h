@@ -32,6 +32,11 @@ fprintf(stderr, "-------\n");                                               \
 #endif
 
 #pragma mark --------------------------
+#pragma mark Rect
+/** Rect*/
+#define Rect(x, y, width, height) (CGRectMake((x), (y), (width), (height)))
+
+#pragma mark --------------------------
 #pragma mark 屏幕宽度和高度
 /** 屏幕宽度和高度*/
 #define ScreenH [UIScreen mainScreen].bounds.size.height

@@ -59,14 +59,20 @@ _Pragma("clang diagnostic ignored \"-Wformat-extra-args\"")
 
 #import "SQLTool.h"
 
+#import "NSString+Extension.h"
 
-@interface ViewController ()<InfiniteScrollViewDelegate>
+#import "UIScrollView+Extension.h"
+
+
+@interface ViewController ()<InfiniteScrollViewDelegate, UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (weak, nonatomic) IBOutlet UIView *blackView;
+
+@property (nonatomic, weak) UIScrollView *scrollView;
 @end
 
 @implementation ViewController
@@ -91,6 +97,71 @@ _Pragma("clang diagnostic ignored \"-Wformat-extra-args\"")
     
     //[self createTB];
     
+    /*
+     NSString *str = @"梁继强 keenleung";
+     NSString *encodeStr = [str encodeURL];
+     NSString *decodeStr = [encodeStr decodeURL];
+     NSLog(@"%@", encodeStr);
+     NSLog(@"%@", decodeStr);
+     */
+    
+    CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
+    //UIImage *image = [[UIImage imageNamed:@"300-4.jpeg"] roundedWithRadius:5];
+    UIImage *image = [UIImage imageNamed:@"300-4.jpeg"];
+    imageView.image = image;
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    scrollView.contentSize = CGSizeMake(screenW, screenH + 100);
+    self.scrollView = scrollView;
+    scrollView.delegate = self;
+    
+    
+    [self.view addSubview:scrollView];
+    [scrollView addSubview:imageView];
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    
+    
+    //CGPoint translation = [scrollView.panGestureRecognizer translationInView:scrollView.superview];
+    
+    //NSLog(@"%lf == %lf", translation.x, translation.y);
+    
+    //    if (translation.y>0) { // 接近第一行
+    //        
+    //        NSLog(@"向上");
+    //        
+    //    }else if(translation.y<0){ // 远离第一行
+    //        
+    //        NSLog(@"向下");
+    //    }
+    //
+    //    if (translation.x > 0) {
+    //
+    //        NSLog(@"靠左");
+    //    }
+    //
+    //    if (translation.x < 0) {
+    //        NSLog(@"靠右");
+    //    }
+    
+    Direction direction = [scrollView scrollDirection];
+    if (direction == kDirectionTop) {
+        NSLog(@"向上");
+    }else if(direction == kDirectionBottom){
+        NSLog(@"向下");
+    }else if(direction == kDirectionLeft){
+        NSLog(@"靠左");
+    }else if(direction == kDirectionRight){
+        NSLog(@"靠右");
+    }
+    
+    NSObject *obj;
 }
 
 
