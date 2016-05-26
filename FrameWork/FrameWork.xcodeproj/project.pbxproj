@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180163191CF7355900171522 /* StatusBarHub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180163161CF7355900171522 /* StatusBarHub.bundle */; };
+		1801631A1CF7355900171522 /* StatusBarHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 180163181CF7355900171522 /* StatusBarHub.m */; };
+		1801631E1CF735D800171522 /* StatusBarHubTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801631C1CF735D800171522 /* StatusBarHubTestVC.m */; };
+		1801631F1CF735D800171522 /* StatusBarHubTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1801631D1CF735D800171522 /* StatusBarHubTestVC.xib */; };
 		1803BF7D1CC5A98200EEF0F0 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803BF6C1CC5A98200EEF0F0 /* GlobalConst.m */; };
 		1803BF7E1CC5A98200EEF0F0 /* FastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803BF731CC5A98200EEF0F0 /* FastLoginButton.m */; };
 		1803BF7F1CC5A98200EEF0F0 /* GlobalSlidingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803BF761CC5A98200EEF0F0 /* GlobalSlidingNavigationController.m */; };
@@ -86,6 +90,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180163161CF7355900171522 /* StatusBarHub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StatusBarHub.bundle; sourceTree = "<group>"; };
+		180163171CF7355900171522 /* StatusBarHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarHub.h; sourceTree = "<group>"; };
+		180163181CF7355900171522 /* StatusBarHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarHub.m; sourceTree = "<group>"; };
+		1801631B1CF735D800171522 /* StatusBarHubTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarHubTestVC.h; sourceTree = "<group>"; };
+		1801631C1CF735D800171522 /* StatusBarHubTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarHubTestVC.m; sourceTree = "<group>"; };
+		1801631D1CF735D800171522 /* StatusBarHubTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusBarHubTestVC.xib; sourceTree = "<group>"; };
 		1803BF6B1CC5A98200EEF0F0 /* GlobalConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
 		1803BF6C1CC5A98200EEF0F0 /* GlobalConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
 		1803BF6E1CC5A98200EEF0F0 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -243,6 +253,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180163141CF7355900171522 /* 状态指示器 */ = {
+			isa = PBXGroup;
+			children = (
+				180163151CF7355900171522 /* StatusBarHub */,
+				1801631B1CF735D800171522 /* StatusBarHubTestVC.h */,
+				1801631C1CF735D800171522 /* StatusBarHubTestVC.m */,
+				1801631D1CF735D800171522 /* StatusBarHubTestVC.xib */,
+			);
+			path = "状态指示器";
+			sourceTree = "<group>";
+		};
+		180163151CF7355900171522 /* StatusBarHub */ = {
+			isa = PBXGroup;
+			children = (
+				180163161CF7355900171522 /* StatusBarHub.bundle */,
+				180163171CF7355900171522 /* StatusBarHub.h */,
+				180163181CF7355900171522 /* StatusBarHub.m */,
+			);
+			path = StatusBarHub;
+			sourceTree = "<group>";
+		};
 		1803BF6A1CC5A98200EEF0F0 /* 常量 */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +605,7 @@
 		184FEA641CB3346F0053F2AF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				180163141CF7355900171522 /* 状态指示器 */,
 				18BDBC4C1CF5E31600538CC4 /* 瀑布流 */,
 				18BFC74E1CF15DAA001BBDB1 /* 用户偏好 */,
 				18C4AFB31CEDBDDE00F9FD69 /* 播放远程视频 */,
@@ -879,6 +911,8 @@
 				18C4AFC41CEDBFF800F9FD69 /* Player.bundle in Resources */,
 				18C4AFC61CEDBFF800F9FD69 /* PlayerView.xib in Resources */,
 				184FEA731CB336210053F2AF /* navigationButtonReturnClick@2x.png in Resources */,
+				180163191CF7355900171522 /* StatusBarHub.bundle in Resources */,
+				1801631F1CF735D800171522 /* StatusBarHubTestVC.xib in Resources */,
 				184FEA721CB336210053F2AF /* navigationButtonReturnClick.png in Resources */,
 				18335EE71CACE60600B465A7 /* Main.storyboard in Resources */,
 				184FEA701CB336210053F2AF /* navigationButtonReturn@2x.png in Resources */,
@@ -951,6 +985,7 @@
 				18335F2E1CACE70300B465A7 /* UIViewController+Alert.m in Sources */,
 				18BDBC5E1CF5E36900538CC4 /* Shop.m in Sources */,
 				18BFC74D1CF158C1001BBDB1 /* UIScrollView+Extension.m in Sources */,
+				1801631A1CF7355900171522 /* StatusBarHub.m in Sources */,
 				1864B03D1CE017B30005ADE1 /* SQLTool.m in Sources */,
 				180C76341CD6FBAE009A91CD /* PlaceholderTextView.m in Sources */,
 				18335F2A1CACE70300B465A7 /* UIView+Extension.m in Sources */,
@@ -977,6 +1012,7 @@
 				18BDBC5B1CF5E31600538CC4 /* WaterflowLayout.m in Sources */,
 				1864B0341CE016F40005ADE1 /* FMDatabase.m in Sources */,
 				1864B0361CE016F40005ADE1 /* FMDatabasePool.m in Sources */,
+				1801631E1CF735D800171522 /* StatusBarHubTestVC.m in Sources */,
 				18C4AFC51CEDBFF800F9FD69 /* PlayerView.m in Sources */,
 				18BC689D1CB750F20043E352 /* UIApplication+Function.m in Sources */,
 				1803BF7F1CC5A98200EEF0F0 /* GlobalSlidingNavigationController.m in Sources */,

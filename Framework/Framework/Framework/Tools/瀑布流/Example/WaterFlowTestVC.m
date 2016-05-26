@@ -123,9 +123,11 @@ static NSString * const shopId = @"shopId";
 #pragma mark WaterflowLayoutDelegate
 - (CGFloat)waterflowLayout:(WaterflowLayout *)waterfloawLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath andItemWidth:(CGFloat)itemWidth{
     
-    Shop *shop = self.shops[indexPath.item];
+    //Shop *shop = self.shops[indexPath.item];
     
-    return 1.0 * itemWidth * shop.h / shop.w;
+    //return 1.0 * itemWidth * shop.h / shop.w;
+
+    return 100;
 }
 
 - (NSInteger)columnCountInWaterflowLayout:(WaterflowLayout *)waterflowLayout{
@@ -133,9 +135,20 @@ static NSString * const shopId = @"shopId";
     return 3;
 }
 
+- (CGFloat)columnMarginInWaterflowLayout:(WaterflowLayout *)waterflowLayout{
+
+    return 5;
+}
+
+- (CGFloat)rowMarginInWaterflowLayout:(WaterflowLayout *)waterflowLayout{
+
+    return 5;
+}
+
 - (UIEdgeInsets)edgeInsetsInWaterflowLayout:(WaterflowLayout *)waterflowLayout{
     
-    return UIEdgeInsetsZero;
+    //return UIEdgeInsetsZero;
+    return (UIEdgeInsets){15, 15, 15, 15};
 }
 
 
