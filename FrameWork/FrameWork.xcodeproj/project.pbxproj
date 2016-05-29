@@ -86,6 +86,9 @@
 		18C4AFC51CEDBFF800F9FD69 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFC21CEDBFF800F9FD69 /* PlayerView.m */; };
 		18C4AFC61CEDBFF800F9FD69 /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C4AFC31CEDBFF800F9FD69 /* PlayerView.xib */; };
 		18C4AFCA1CEDC2C300F9FD69 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4AFC91CEDC2C300F9FD69 /* UIDevice+Extension.m */; };
+		18CF93281CFB0A9F0089F366 /* UIViewController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF93271CFB0A9F0089F366 /* UIViewController+Transition.m */; };
+		18CF932F1CFB0B230089F366 /* TestTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF932C1CFB0B230089F366 /* TestTransitionVC.m */; };
+		18CF93301CFB0B230089F366 /* TestTransitionMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF932E1CFB0B230089F366 /* TestTransitionMainVC.m */; };
 		CFD489C76871CB2844C3DDD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7435D13C31452F74B3BA8D7A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +238,12 @@
 		18C4AFC31CEDBFF800F9FD69 /* PlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
 		18C4AFC81CEDC2C300F9FD69 /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
 		18C4AFC91CEDC2C300F9FD69 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		18CF93261CFB0A9F0089F366 /* UIViewController+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Transition.h"; sourceTree = "<group>"; };
+		18CF93271CFB0A9F0089F366 /* UIViewController+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Transition.m"; sourceTree = "<group>"; };
+		18CF932B1CFB0B230089F366 /* TestTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTransitionVC.h; sourceTree = "<group>"; };
+		18CF932C1CFB0B230089F366 /* TestTransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTransitionVC.m; sourceTree = "<group>"; };
+		18CF932D1CFB0B230089F366 /* TestTransitionMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTransitionMainVC.h; sourceTree = "<group>"; };
+		18CF932E1CFB0B230089F366 /* TestTransitionMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTransitionMainVC.m; sourceTree = "<group>"; };
 		7435D13C31452F74B3BA8D7A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B140EBEB9DA863994C6DFD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A24D5380DF2C6EFA635FD2D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -567,8 +576,11 @@
 		18335F1F1CACE70300B465A7 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18CF932A1CFB0B0A0089F366 /* Demo */,
 				18335F201CACE70300B465A7 /* UIViewController+Alert.h */,
 				18335F211CACE70300B465A7 /* UIViewController+Alert.m */,
+				18CF93261CFB0A9F0089F366 /* UIViewController+Transition.h */,
+				18CF93271CFB0A9F0089F366 /* UIViewController+Transition.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -821,6 +833,17 @@
 			path = UIDevice;
 			sourceTree = "<group>";
 		};
+		18CF932A1CFB0B0A0089F366 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				18CF932B1CFB0B230089F366 /* TestTransitionVC.h */,
+				18CF932C1CFB0B230089F366 /* TestTransitionVC.m */,
+				18CF932D1CFB0B230089F366 /* TestTransitionMainVC.h */,
+				18CF932E1CFB0B230089F366 /* TestTransitionMainVC.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		CA00DC6C6626C9BA0A9F289B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -976,6 +999,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CF93301CFB0B230089F366 /* TestTransitionMainVC.m in Sources */,
 				18335F271CACE70300B465A7 /* UILabel+SizeToFit.m in Sources */,
 				185C71791CE55A5400C87FC5 /* TestViewController.m in Sources */,
 				182BF7E81CDD89E200D05AC3 /* InfiniteScrollView.m in Sources */,
@@ -998,6 +1022,7 @@
 				1899A04B1CB6677600636DAD /* YYHttpTool.m in Sources */,
 				1899A0481CB6624B00636DAD /* UITextField+Placeholder.m in Sources */,
 				18335F241CACE70300B465A7 /* UIColor+Extension.m in Sources */,
+				18CF932F1CFB0B230089F366 /* TestTransitionVC.m in Sources */,
 				188491541CC286E100EB8FA0 /* UIImageView+Download.m in Sources */,
 				18C21B711CF13D66009FF806 /* NSString+Extension.m in Sources */,
 				18335F221CACE70300B465A7 /* UIBarButtonItem+Extension.m in Sources */,
@@ -1013,6 +1038,7 @@
 				1864B0341CE016F40005ADE1 /* FMDatabase.m in Sources */,
 				1864B0361CE016F40005ADE1 /* FMDatabasePool.m in Sources */,
 				1801631E1CF735D800171522 /* StatusBarHubTestVC.m in Sources */,
+				18CF93281CFB0A9F0089F366 /* UIViewController+Transition.m in Sources */,
 				18C4AFC51CEDBFF800F9FD69 /* PlayerView.m in Sources */,
 				18BC689D1CB750F20043E352 /* UIApplication+Function.m in Sources */,
 				1803BF7F1CC5A98200EEF0F0 /* GlobalSlidingNavigationController.m in Sources */,
