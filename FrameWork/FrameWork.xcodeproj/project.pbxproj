@@ -65,6 +65,10 @@
 		188AB6D11CC084A400CDA050 /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB6D01CC084A400CDA050 /* NSArray+BlocksKit.m */; };
 		1899A0481CB6624B00636DAD /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A0471CB6624B00636DAD /* UITextField+Placeholder.m */; };
 		1899A04B1CB6677600636DAD /* YYHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899A04A1CB6677600636DAD /* YYHttpTool.m */; };
+		18B03EF81D0F9FF700842CBF /* BubbleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B03EF51D0F9FF700842CBF /* BubbleMenu.m */; };
+		18B03EF91D0F9FF700842CBF /* BubbleMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B03EF71D0F9FF700842CBF /* BubbleMenuItem.m */; };
+		18B03F011D0FA12900842CBF /* BubbleMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B03F001D0FA12900842CBF /* BubbleMenuVC.m */; };
+		18B03F031D0FA1C300842CBF /* BubbleMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B03F021D0FA1C300842CBF /* BubbleMenu.bundle */; };
 		18BC68961CB737360043E352 /* UITextField+PlaceholderColorByRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC68951CB737360043E352 /* UITextField+PlaceholderColorByRuntime.m */; };
 		18BC689D1CB750F20043E352 /* UIApplication+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC689C1CB750F20043E352 /* UIApplication+Function.m */; };
 		18BC68A11CB753B60043E352 /* UIImageView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC68A01CB753B60043E352 /* UIImageView+Gesture.m */; };
@@ -201,6 +205,13 @@
 		1899A0471CB6624B00636DAD /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
 		1899A0491CB6677600636DAD /* YYHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHttpTool.h; sourceTree = "<group>"; };
 		1899A04A1CB6677600636DAD /* YYHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHttpTool.m; sourceTree = "<group>"; };
+		18B03EF41D0F9FF700842CBF /* BubbleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleMenu.h; sourceTree = "<group>"; };
+		18B03EF51D0F9FF700842CBF /* BubbleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleMenu.m; sourceTree = "<group>"; };
+		18B03EF61D0F9FF700842CBF /* BubbleMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleMenuItem.h; sourceTree = "<group>"; };
+		18B03EF71D0F9FF700842CBF /* BubbleMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleMenuItem.m; sourceTree = "<group>"; };
+		18B03EFF1D0FA12900842CBF /* BubbleMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleMenuVC.h; sourceTree = "<group>"; };
+		18B03F001D0FA12900842CBF /* BubbleMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleMenuVC.m; sourceTree = "<group>"; };
+		18B03F021D0FA1C300842CBF /* BubbleMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BubbleMenu.bundle; sourceTree = "<group>"; };
 		18BC68941CB737360043E352 /* UITextField+PlaceholderColorByRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColorByRuntime.h"; sourceTree = "<group>"; };
 		18BC68951CB737360043E352 /* UITextField+PlaceholderColorByRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColorByRuntime.m"; sourceTree = "<group>"; };
 		18BC689B1CB750F20043E352 /* UIApplication+Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Function.h"; sourceTree = "<group>"; };
@@ -617,6 +628,7 @@
 		184FEA641CB3346F0053F2AF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18B03EEC1D0F9CE100842CBF /* 弹出菜单 */,
 				180163141CF7355900171522 /* 状态指示器 */,
 				18BDBC4C1CF5E31600538CC4 /* 瀑布流 */,
 				18BFC74E1CF15DAA001BBDB1 /* 用户偏好 */,
@@ -719,6 +731,36 @@
 				18BC68951CB737360043E352 /* UITextField+PlaceholderColorByRuntime.m */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		18B03EEC1D0F9CE100842CBF /* 弹出菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				18B03EF31D0F9FF700842CBF /* BubbleMenu */,
+				18B03EFE1D0FA11300842CBF /* Demo */,
+			);
+			path = "弹出菜单";
+			sourceTree = "<group>";
+		};
+		18B03EF31D0F9FF700842CBF /* BubbleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				18B03EF41D0F9FF700842CBF /* BubbleMenu.h */,
+				18B03EF51D0F9FF700842CBF /* BubbleMenu.m */,
+				18B03EF61D0F9FF700842CBF /* BubbleMenuItem.h */,
+				18B03EF71D0F9FF700842CBF /* BubbleMenuItem.m */,
+			);
+			path = BubbleMenu;
+			sourceTree = "<group>";
+		};
+		18B03EFE1D0FA11300842CBF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				18B03F021D0FA1C300842CBF /* BubbleMenu.bundle */,
+				18B03EFF1D0FA12900842CBF /* BubbleMenuVC.h */,
+				18B03F001D0FA12900842CBF /* BubbleMenuVC.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		18BC689A1CB750930043E352 /* UIApplication */ = {
@@ -935,6 +977,7 @@
 				18C4AFC61CEDBFF800F9FD69 /* PlayerView.xib in Resources */,
 				184FEA731CB336210053F2AF /* navigationButtonReturnClick@2x.png in Resources */,
 				180163191CF7355900171522 /* StatusBarHub.bundle in Resources */,
+				18B03F031D0FA1C300842CBF /* BubbleMenu.bundle in Resources */,
 				1801631F1CF735D800171522 /* StatusBarHubTestVC.xib in Resources */,
 				184FEA721CB336210053F2AF /* navigationButtonReturnClick.png in Resources */,
 				18335EE71CACE60600B465A7 /* Main.storyboard in Resources */,
@@ -1007,6 +1050,7 @@
 				18335F2B1CACE70300B465A7 /* UIView+KBView.m in Sources */,
 				1856626C1CC3F25F001E3069 /* Person.m in Sources */,
 				18335F2E1CACE70300B465A7 /* UIViewController+Alert.m in Sources */,
+				18B03EF81D0F9FF700842CBF /* BubbleMenu.m in Sources */,
 				18BDBC5E1CF5E36900538CC4 /* Shop.m in Sources */,
 				18BFC74D1CF158C1001BBDB1 /* UIScrollView+Extension.m in Sources */,
 				1801631A1CF7355900171522 /* StatusBarHub.m in Sources */,
@@ -1057,11 +1101,13 @@
 				18BFC7511CF15DE7001BBDB1 /* UserDefaults.m in Sources */,
 				18335F261CACE70300B465A7 /* UIImage+Extension.m in Sources */,
 				18335F281CACE70300B465A7 /* UINavigationBar+Extension.m in Sources */,
+				18B03EF91D0F9FF700842CBF /* BubbleMenuItem.m in Sources */,
 				1803BF811CC5A98200EEF0F0 /* FileManager.m in Sources */,
 				18335F311CACE72C00B465A7 /* UIColor+Extensions.m in Sources */,
 				188AB6D11CC084A400CDA050 /* NSArray+BlocksKit.m in Sources */,
 				1864B0371CE016F40005ADE1 /* FMDatabaseQueue.m in Sources */,
 				185C71761CE5584600C87FC5 /* BaseViewController.m in Sources */,
+				18B03F011D0FA12900842CBF /* BubbleMenuVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

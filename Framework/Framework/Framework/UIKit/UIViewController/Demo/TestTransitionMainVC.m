@@ -26,12 +26,16 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     TestTransitionVC *vc = [[TestTransitionVC alloc] init];
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    //UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     vc.title = @"第二个控制器";
+
+    NSLog(@"11111");
     
 
     //[self.navigationController pushVC:navVC];
-    [self.navigationController pushVCFromTop:navVC withDuration:1.5];
+    //[self.navigationController pushVCFromTop:vc];
+    //[self pushVC:vc];
+    [self.navigationController pushVC:vc];
 }
 
 @end
